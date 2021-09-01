@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Maze shows</title>
+    <link rel="stylesheet" href="src/dist/style.css">
+    <script src="src/js/main.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/e9dadc57c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="https://www.tvmaze.com/"><img src="https://static.tvmaze.com/images/tvm-header-logo.png" alt=""></a>
+            <div class="user-links">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Networks</a></li>
+                <li><a href="#">Web Channels</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Countdown</a></li>
+                <li><a href="#">Forums</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>SHOWS</li>
+            </ul>
+        </div>
+        <div class="ads-container">
+            <div class="ad">
+                <a href=""><img src="https://static.tvmaze.com/images/cinereus/72890_d.png" alt=""></a>
+            </div>
+            <div class="subscribe">
+                <a href=""><img src="https://static.tvmaze.com/images/tvmheader/request_tiny_v2_2.png" alt=""></a>
+            </div>
+        </div>
+        <h1>Shows</h1>
+        <div class="shows">
+            <form class="filter-form">
+                <label for="status">Show Status</label>
+                <select id="status">
+                    <option value=""></option>
+                    <option value="1">Running</option>
+                    <option value="2">Ended</option>
+                    <option value="3">To Be Determined</option>
+                    <option value="4">In Development</option>
+                </select>
+                <label for="type">Show Type</label>
+                <select id="type">
+                    <option value=""></option>
+                    <option value="1">Scripted</option>
+                    <option value="2">Animation</option>
+                    <option value="3">Reality</option>
+                    <option value="4">Talk Show</option>
+                    <option value="5">Documentary</option>
+                    <option value="6">Game Show</option>
+                    <option value="7">News</option>
+                    <option value="8">Sports</option>
+                    <option value="9">Variety</option>
+                    <option value="10">Award Show</option>
+                    <option value="11">Panel Show</option>
+                </select>
+                <label for="genre">Genre</label>
+                <select id="genre">
+                    <option value=""></option>
+                    <option value="1">Action</option>
+                    <option value="2">Adult</option>
+                    <option value="3">Adventure</option>
+                    <option value="4">Anime</option>
+                    <option value="5">Children</option>
+                    <option value="6">Comedy</option>
+                    <option value="7">Crime</option>
+                    <option value="8">DIY</option>
+                    <option value="9">Drama</option>
+                    <option value="10">Espionage</option>
+                    <option value="11">Family</option>
+                    <option value="12">Fantasy</option>
+                    <option value="13">Food</option>
+                    <option value="14">History</option>
+                    <option value="15">Horror</option>
+                    <option value="16">Legal</option>
+                    <option value="18">Medical</option>
+                    <option value="19">Music</option>
+                    <option value="20">Mystery</option>
+                    <option value="21">Nature</option>
+                    <option value="22">Romance</option>
+                    <option value="23">Science-Fiction</option>
+                    <option value="25">Sports</option>
+                    <option value="26">Supernatural</option>
+                    <option value="27">Thriller</option>
+                    <option value="29">Travel</option>
+                    <option value="30">War</option>
+                    <option value="31">Western</option>
+                </select>
+                <label for="lang">Language</label>
+                <select id="lang"></select>
+                <label for="country">Country</label>
+                <select id="country"></select>
+                <label for="network">Network</label>
+                <select id="network"></select>
+                <label for="channel">Web Channel</label>
+                <select id="channel"></select>
+                <label for="runtime">Runtime</label>
+                <select id="runtime"></select>
+                <label for="rating">Rating</label>
+                <select id="rating"></select>
+                <label for="sort">Sort By</label>
+                <select id="sort">
+                    <option value="1">Most popular</option>
+                    <option value="2">Least popular</option>
+                    <option value="3">Highest rating</option>
+                    <option value="4">Lowest rating</option>
+                    <option value="6">A to Z</option>
+                    <option value="7">Z to A</option>
+                    <option value="8">Most recently added</option>
+                    <option value="9">Least recently added</option>
+                </select>
+                <button class="filter-btn">Filter</button>
+            </form>
+        </div>
+        <ul class="pages">
+            <li class="first-page"><a href="#"></a>⇤</li>
+            <li class="first-page"><a href="#"></a>«</li>
+            <li class="current"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">»</a></li>
+            <li><a href="#">⇥</a></li>
+        </ul>
+    </main>
+    <footer>
+        <div class="ads-container">
+            <div class="ad">
+                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUNApX_DZYLujqjsGawdunvwYA6jH4krrWVQ&usqp=CAU" alt=""></a>
+            </div>
+            <div class="subscribe">
+                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5LiHembSXb6ulQdr2ezZfGcfJ3vqQXiPcYg&usqp=CAU" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="right">
+                <ul class="social-media">
+                    <li>Follow us on:</li>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-reddit"></i></a></li>
+                </ul>
+                <a href="#" class="copyright">© TVmaze.com</a>
+            </div>
+            <div class="left">
+                <div>
+                    <ul class="top-links">
+                        <li><a href="">Features</a></li>
+                        <li><a href="">API</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Request a Show</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="bottom-links">
+                        <li><a href="">Data Policies</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">ToS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

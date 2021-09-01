@@ -1,0 +1,170 @@
+@import "colors";
+@import "animations";
+
+main {
+    margin: 0 30px 0 30px;
+
+    .breadcrumbs {
+        background-color: #efefe7;
+        margin: 1rem;
+
+        ul {
+            padding: 1rem;
+            font-size: .8rem;
+
+            li {
+                a{
+                    color: $main-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    // separate from link
+                    &::after {
+                        margin: 0 .75rem;
+                        content: "/";
+                        color: #cacaca;
+                    }
+                }
+
+            }
+        }
+    }
+
+    h1 {
+        padding-left: 15px;
+        font-weight: lighter;
+    }
+
+    .shows {
+        display: flex;
+
+        .shows-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            // align-content: space-around;
+
+            .show-item {
+                background-color: #3c948b;
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                margin-bottom: 30px;
+
+                .show-name {
+                    padding: .8rem;
+                    color: #b9e3de;
+                    transition: $hover-bg-color;
+
+                    &:hover {
+                        color: #fff;
+                        text-decoration: underline;
+                    }
+                }
+
+
+                .social {
+                    color: #b9e3de;
+                    border-top: 1px solid #b9e3de;
+                    padding: .3rem;
+                    text-align: center;
+                    font-size: 1.3rem;
+
+                    .fas {
+                        transition: $hover-bg-color;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    .fa-star {
+                        margin-left: 5rem;
+
+                        span {
+                            font-family: helvetica, sans-serif;;
+                            font-weight: 200;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .filter-form {
+            flex-basis: 16%;
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            font-size: .9333rem;
+
+            select {
+                margin-bottom: 1rem;
+                border: 1px solid #cacaca;
+                padding: .5rem;
+                font-size: 1rem;
+                color: #505761;
+            }
+
+            .filter-btn {
+                border-radius: 2rem;
+                border: 1px solid transparent;
+                border-bottom: #1f4b47 solid 1px;
+                background-color: $main-color;
+                color: $header-link;
+                transition: $hover-bg-color;
+                padding: .8rem 1rem;
+                cursor: pointer;
+                width: fit-content;
+
+                &:hover {
+                    background-color: #69ccc2
+                }
+            }
+        }
+    }
+
+    .pages {
+        margin-bottom: 3rem;
+        ;
+        li {
+            padding: 0.33rem 0.66rem;
+
+            a {
+                color: #0a0a0a;
+            }
+
+            &:hover {
+                background-color: #ccc;
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .current {
+            background-color: $main-color;
+            
+            a{
+                color: #fefefe;
+            }
+
+            &:hover {
+                background-color: #ccc;
+    
+                a {
+                    color: #0a0a0a;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .first-page {
+            cursor: not-allowed;
+            color: #ccc;
+        }
+    }
+}
