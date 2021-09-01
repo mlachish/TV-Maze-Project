@@ -1,4 +1,4 @@
-/src/dist
+/dist
 /node_modules
 *.log
 /.vscode
